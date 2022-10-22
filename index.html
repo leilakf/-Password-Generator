@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@1&family=Lato:wght@100&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="asset/stylesheet.css">
+    <link rel="stylesheet" href="asset/fontello-5499cac7/css/fontello.css">
+
+    <title>password-Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Password Generator</h3>
+        </div>
+        <div class="txt_input col-12 ">
+            <span class="col-9 txt" id="result" >CLICK GENERATE</span>
+            <div id="clipboard" class="icon col-3 ">
+                <i class=" demo-icon icon-docs"></i>
+            </div>
+        </div>
+        <div class="length col-12 rangeSlider"data-min="4" data-max="20" >
+            <div class="lengthTitle " data-length='20'>length:</div>
+            <input id="length1" type="range" min="4" max="20" value="20" />
+        </div>
+        <div class="settings">
+            <span class="lengthTitle ">settings</span>
+            <div class="setting">
+                <input type="checkbox" id="uppercase" checked />
+                <label for="uppercase">Include Uppercase</label>
+            </div>
+            <div class="setting">
+                <input type="checkbox" id="lowercase" checked />
+                <label for="lowercase">Include Lowercase</label>
+            </div>
+            <div class="setting">
+                <input type="checkbox" id="numbers" checked />
+                <label for="numbers">Include Numbers</label>
+            </div>
+            <div class="setting">
+                <input type="checkbox" id="symbols" checked />
+                <label for="symbols">Include Symbols</label>
+            </div>
+
+
+        </div>
+        <div id="generation">
+            <button id="generate" class="btn">Generate Password</button>
+        </div>
+    </div>
+</body>
+<script src="asset/script.js"></script>
+
+</html>

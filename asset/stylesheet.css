@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to top, #e35430 100%, #eb6b34 200%);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Lato', sans-serif
+}
+
+.container {
+    width: 400px;
+    border-radius: 10px;
+    padding: 0px 25px;
+    background: #0a0e31;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.45), 0 4px 8px rgba(0, 0, 0, 0.35), 0 8px 12px rgba(0, 0, 0, 0.15);
+    height: auto;
+
+}
+
+div.header {
+    /* background-color: azure; */
+    margin: 10px;
+    padding: 20px;
+}
+
+.container h3 {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    letter-spacing: 0.6px;
+}
+
+.txt_input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+    line-height: 65px;
+    font-weight: bold;
+    position: relative;
+
+}
+
+.txt_input>.icon {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    background-color: #eb6b34;
+    color: white;
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.lengthTitle::after {
+    content: attr(data-length);
+    position: absolute;
+    right: -16px;
+    font-variant-numeric: tabular-nums;
+    color: #fff;
+
+}
+
+
+
+.length {
+    position: relative;
+    /* width: 100%; */
+    height: calc(65px - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    margin: 30px 0;
+    transition: 0.5s;
+}
+
+.length::before {
+    content: "4";
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.length::after {
+    content: "20";
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.length>.lengthTitle {
+    position: absolute;
+    top: -10px;
+    left: 8px;
+    transform: translateY(-50%);
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+#length1 {
+    background: linear-gradient(90deg, rgb(11, 30, 223) 42.8571%, rgba(255, 255, 255, 0.216) 42.9571%);
+    width: calc(100% - (70px));
+    height: 3px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.314);
+    outline: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.settings {
+    width: 100%;
+
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.settings>.lengthTitle {
+    position: absolute;
+    top: -10px;
+    left: 8px;
+    transform: translateY(-50%);
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.settings .setting {
+    position: relative;
+    width: 100%;
+    height: calc(65px - 10px);
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+    color: #fff;
+    margin-bottom: 8px;
+
+}
+
+.settings .setting input {
+    /* opacity: 0; */
+}
+
+label::before {
+    content: "";
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 10px;
+    cursor: pointer;
+    height: 30px;
+    width: 50px;
+    border-radius: 30px;
+    background: rgba(214, 214, 214, 0.434);
+}
+
+label::after {
+    content: "";
+    position: absolute;
+    transition: 150ms cubic-bezier(0.24, 0, 0.5, 1);
+    transform: translateY(-50%);
+    top: 50%;
+    right: 10px;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    border-radius: 60px;
+    right: 32px;
+    background: #fff;
+}
+
+#generation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#generation .btn {
+    border: none;
+    display: block;
+    width: 80%;
+    height: 50px;
+    font-weight: bold;
+    margin: 30px;
+    font-size: 19px;
+    cursor: pointer;
+    color: white;
+}
