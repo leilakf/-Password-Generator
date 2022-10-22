@@ -20,11 +20,6 @@ $length.innerText = clipboard.addEventListener('click', () => {
 })
 // //////////////////////////////////////////////////////////
 // تغییر مقدار طول کار در قسمت تایتل  لنس از 0 تا 20
-const sliderProps = {
-    fill: "#0B1EDF",
-    background: "rgba(255, 255, 255, 0.214)"
-}
-
 
 const slider = document.querySelector(".rangeSlider");
 
@@ -35,20 +30,7 @@ slider.querySelector("input").addEventListener("input", event => {
     applyFill(event.target);
 });
 
-applyFill(slider.querySelector("input"));
 
-function applyFill(slider) {
-    const percentage = (100 * (slider.value - slider.min)) / (slider.max - slider.min);
-    const bg = `linear-gradient(90deg, ${
-        sliderProps.fill
-    } ${percentage}%, ${
-        sliderProps.background
-    } ${
-        percentage + 0.1
-    }%)`;
-    slider.style.background = bg;
-    sliderValue.setAttribute("data-length", slider.value);
-}
 // ///////////////////////////////////////////////////////////////////////
 // گرفتن ابجکت از تمام اینپوت های لازم برای تشکیل پسورد تصادفی
 const RandomFunc = {
